@@ -23,7 +23,6 @@ app.get("/webhook", (req, res) => {
   }
 });
 
-// Receiving Webhook Events
 app.post("/webhook", (req, res) => {
   console.log("Webhook event received:", req.body);
   res.sendStatus(200);
