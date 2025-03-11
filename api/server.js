@@ -1,12 +1,14 @@
 import express from "express"
 const bodyParser = require("body-parser");
+import cors from "cors";
+
 
 const app = express();
 app.use(bodyParser.json());
 
 const VERIFY_TOKEN = "11131113";
 
-console.log("aa");
+server.use(cors());
 
 
 // Verification Endpoint
